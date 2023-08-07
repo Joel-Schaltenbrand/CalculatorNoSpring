@@ -15,7 +15,7 @@ JavaScript for the frontend.
 
 ## Technologies Used
 
-- Backend: Java Servlets, Tomcat
+- Backend: Java Servlets (Jakarta), Tomcat
 - Frontend: HTML, CSS, JavaScript
 
 ## Getting Started
@@ -27,7 +27,7 @@ Follow these simple steps to get the Calculator app up and running on your local
 The Calculator app requires Tomcat to be installed and configured on your system. If you do not have Tomcat installed,
 please follow these steps:
 
-1. Download Tomcat from the [Apache Tomcat website](https://tomcat.apache.org/download-90.cgi).
+1. Download Tomcat from the [Apache Tomcat website](https://tomcat.apache.org/download-10.cgi).
 2. Set up a User:
     - Open the Tomcat installation directory.
     - Navigate to the `conf` directory.
@@ -43,8 +43,8 @@ please follow these steps:
     - Run the `startup.sh` script.
     - You can now access the Tomcat Manager by opening a web browser and going to: `http://localhost:8080/manager/html`
 4. Setup .m2 settings:
-    - Open the .m2 directory in your user directory.
-    - Open the `settings.xml` file.
+    - Open the .m2 directory in your user directory. ( ```%USERPROFILE%\.m2``` on Windows, ```~/.m2``` on Linux)
+    - Open the `settings.xml` file. (If your new to Maven, [you may need to create this file](https://www.baeldung.com/maven-settings-xml))
     - Add the following lines to the file:
         ```xml
         <server>
@@ -59,9 +59,8 @@ please follow these steps:
 1. Clone the repository: `git clone https://github.com/Joel-Schaltenbrand/CalculatorNoSpring.git`
 2. Navigate to the repository directory: `cd Calculator`
 3. Deploy the app using Tomcat:
-    - Ensure you have Tomcat installed and configured on your system.
-    - Start Tomcat.
-    - Deploy the app by typing `mvn package tomcat7:deploy` in the terminal.
+    - Ensure you have Tomcat started
+    - Deploy the app by typing `mvn tomcat7:deploy` in the terminal.
     - You can access the app by opening a web browser and going to: `http://localhost:8080/Calculator`
 
 ## Contributing

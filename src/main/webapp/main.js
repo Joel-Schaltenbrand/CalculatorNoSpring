@@ -8,9 +8,9 @@ async function performCalculation(endCalc) {
     const requestData = {
         number1: parseFloat(firstNumber), number2: parseFloat(currentNumber), operator: operator
     };
-    const response = await fetch('http://localhost:8080/calculator/api/calc', {
+    const response = await fetch(window.location.href + 'api/calc', {
         method: 'POST', headers: {
-            'Content-Type': 'application/json'
+            'Accept': 'application/json', 'Content-Type': 'application/json'
         }, body: JSON.stringify(requestData)
     });
     currentNumber = await response.json();
