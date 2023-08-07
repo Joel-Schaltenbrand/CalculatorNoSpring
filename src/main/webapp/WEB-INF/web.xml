@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="Calculator" version="3.0">
+    <display-name>Calculator</display-name>
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>ch.coop.servlet.CalculatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/api/calc</url-pattern>
+    </servlet-mapping>
+</web-app>
