@@ -1,0 +1,3 @@
+ch\coop\filter\CorsFilter.class
+ch\coop\service\CalculatorService.class
+ch\coop\servlet\CalculatorServlet.class

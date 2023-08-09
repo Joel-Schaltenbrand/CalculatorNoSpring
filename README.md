@@ -44,7 +44,7 @@ please follow these steps:
     - You can now access the Tomcat Manager by opening a web browser and going to: `http://localhost:8080/manager/html`
 4. Setup .m2 settings:
     - Open the .m2 directory in your user directory. ( ```%USERPROFILE%\.m2``` on Windows, ```~/.m2``` on Linux)
-    - Open the `settings.xml` file. (If your new to
+    - Open the `settings.xml` file. (If you're new to
       Maven, [you may need to create this file](https://www.baeldung.com/maven-settings-xml))
     - Add the following lines to the file:
         ```xml
