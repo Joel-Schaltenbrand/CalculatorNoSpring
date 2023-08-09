@@ -54,7 +54,7 @@ public class CalculatorServlet extends HttpServlet {
 
 	private void setupResponse(HttpServletResponse resp) {
 		resp.setCharacterEncoding("UTF-8");
-		resp.setContentType("application/json");
+		resp.setContentType("text/plain");
 	}
 
 	private String setupCalculation(HttpServletRequest req) throws IOException {
@@ -72,7 +72,7 @@ public class CalculatorServlet extends HttpServlet {
 	private void writeError(HttpServletResponse resp, Exception e) throws IOException {
 		resp.getWriter().write("Invalid JSON");
 		resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-		System.out.printf("Invalid JSON: %s", e.getMessage());
+		System.err.println("Invalid JSON: " + e);
 	}
 
 }
